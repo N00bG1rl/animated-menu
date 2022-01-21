@@ -1,0 +1,1588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" type="text/css" href="assets/style/style.css"/>
+  <link rel="stylesheet" type="text/css" href="assets/style/menuPage.css"/>
+  
+  <title>Menu | Blossom</title>
+</head>
+<body class="fadeIn">
+  
+  <!-- ### MOBILE NAVIGATION ### -->
+  <section id="mobileBurgerBtn" class="mobileNavWrapper">
+    <div id="burgerBtn" class="burgerBtn"></div>
+    <div class="mobileNav">
+      <ul class="mobileNavItems">
+        <li><a class="mobileNavItem" href="index.html">Home</a></li>
+        <li><a class="mobileNavItem menuLink current" href="menu.html">Menu</a></li>
+        <li><a class="mobileNavItem" href="#">Contact</a></li>
+        <li><a class="mobileNavItem" href="#">About</a></li>
+        <li class="mobileSVGIcons">
+          <button class="mobileSVGIcon">
+            <!-- Language icon -->
+            <svg class="flagIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 51.71">        
+              <path class="path1" d="M18.83,32.27v1.3H8.88V18.75h9.76v1.3h-8.3v5.34h7.24v1.23H10.34v5.65Z"/>
+              <path class="path1" d="M30.33,33.57H28.91v-6a5.33,5.33,0,0,0-.56-2.78,2,2,0,0,0-1.78-.88,3.64,3.64,0,0,0-1.64.4,4.49,4.49,0,0,0-1.43,1.1A4.2,4.2,0,0,0,22.61,27v6.62H21.19V22.74h1.29v2.47a4.93,4.93,0,0,1,1.15-1.38,5.47,5.47,0,0,1,1.61-.93,5.36,5.36,0,0,1,1.86-.33,3.25,3.25,0,0,1,1.52.33,2.61,2.61,0,0,1,1,1,4.41,4.41,0,0,1,.54,1.47,10.23,10.23,0,0,1,.17,1.92Z"/>
+              <path class="path1" d="M37.72,33.78a4.7,4.7,0,0,1-2-.46,5.3,5.3,0,0,1-1.62-1.24,5.94,5.94,0,0,1-1-1.79,5.83,5.83,0,0,1-.38-2.06A6.36,6.36,0,0,1,33,26.07a5.7,5.7,0,0,1,1-1.81A5,5,0,0,1,35.63,23a4.56,4.56,0,0,1,2-.45,4.22,4.22,0,0,1,2.44.7A6.85,6.85,0,0,1,41.85,25V22.74h1.27V33.62a4.31,4.31,0,0,1-.72,2.53,4.45,4.45,0,0,1-1.94,1.55,6.64,6.64,0,0,1-2.66.52,5.85,5.85,0,0,1-3-.67,5.37,5.37,0,0,1-1.88-1.79l.87-.69a4,4,0,0,0,1.72,1.52,5.28,5.28,0,0,0,2.29.5,5,5,0,0,0,2-.37,3.4,3.4,0,0,0,1.42-1.14,3.29,3.29,0,0,0,.53-1.91V31.52A4.72,4.72,0,0,1,40,33.16,4.54,4.54,0,0,1,37.72,33.78Zm.39-1.19a3.45,3.45,0,0,0,1.24-.23,4.4,4.4,0,0,0,1.1-.62,4,4,0,0,0,.83-.86,2.26,2.26,0,0,0,.42-1V26.54a4.45,4.45,0,0,0-2.22-2.37A3.6,3.6,0,0,0,38,23.82a3.37,3.37,0,0,0-1.64.39,3.74,3.74,0,0,0-1.21,1,5.17,5.17,0,0,0-1,3,4.46,4.46,0,0,0,.32,1.66,4.63,4.63,0,0,0,.86,1.39,3.8,3.8,0,0,0,1.3.95A3.67,3.67,0,0,0,38.11,32.59Z"/>
+              <ellipse class="path2" cx="26" cy="25.85" rx="25" ry="24.85"/>
+            </svg>
+          </button>
+          <!-- Audio files -->
+          <audio id="musicMobile" class="mobileSVGIcon" preload="auto" loop>
+            <source src="assets/files/music/IndianDreams.mp3" type="audio/mp3">
+            <source src="assets/files/music/IndianDreams.wav" type="audio/wav">
+          </audio>
+          <!-- Play audio -->
+          <button id="musicIconsMobile" class="mobileSVGIcon musicPlayMobile">
+            <!-- Music play icon -->
+            <svg class="playIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 51.71">
+              <path class="path1" d="M37.67,25.22,21.16,12.6a.85.85,0,0,0-.88-.09.86.86,0,0,0-.46.76V38.44a.84.84,0,0,0,.46.75,1.17,1.17,0,0,0,.45.09.63.63,0,0,0,.43-.17L37.67,26.55a.81.81,0,0,0,.33-.66A.84.84,0,0,0,37.67,25.22ZM21.56,36.75V15L35.78,25.89Z"/>
+              <ellipse class="path2" cx="26" cy="25.85" rx="25" ry="24.85"/>
+            </svg>
+            <!-- Music pause icon -->
+            <svg class="pauseIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 51.71">
+              <path class="path1" d="M19,11.92a.94.94,0,0,0-.94.94v26a.94.94,0,0,0,1.88,0v-26A.94.94,0,0,0,19,11.92Zm14.06,0a.94.94,0,0,0-.94.94v26a.94.94,0,0,0,1.88,0v-26A.94.94,0,0,0,33,11.92Z"/>
+              <ellipse class="path2" cx="26" cy="25.85" rx="25" ry="24.85"/>
+            </svg>
+          </button>
+          <!-- Facebook icon -->
+          <button class="mobileSVGIcon">
+            <a href="#" target="blank">
+              <svg class="facebookIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 51.71">
+                <path class="path1" d="M34.23,24.8H24.72V19.52c0-3.21.75-5.48,2.21-6.76a4.59,4.59,0,0,1,3.4-1.12h3.9a.78.78,0,0,0,0-1.55H30.49a6.26,6.26,0,0,0-4.56,1.47c-1.83,1.58-2.75,4.26-2.75,8V24.8H17.77a.78.78,0,0,0,0,1.55h5.41v14.5a.77.77,0,1,0,1.54,0V26.35h9.51a.78.78,0,0,0,0-1.55Z"/>
+                <ellipse class="path2" cx="26" cy="25.85" rx="25" ry="24.85"/>
+              </svg>
+            </a>
+          </button>
+          <button class="mobileSVGIcon">
+            <!-- Wolt icon -->
+            <a href="#" target="blank">
+              <svg class="woltIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 51.7">
+                <path class="path1" d="M37.54,13.34c-.78,0-1.49,0-1.83.07-.69.07-.92.73-.87,1.37C35.57,24.1,33.51,35,31.19,35,29.45,35,29,29.89,29,25.38c0-2.66.16-5.24.21-7.49,0-.84-.28-1-.89-1.07a6.79,6.79,0,0,0-2.5.09c-.69.16-.87.73-1.6,2.47C20.53,28.08,17,35.07,17,35.07c-.94-7,.27-13.81,1.28-18.76.14-.68-.18-1.09-.75-1.09a7.92,7.92,0,0,0-3.41.54A2.43,2.43,0,0,0,13,17.67c-1.14,5.69-1.87,12.81-.73,18.33.25,1.19.51,1.47,1,1.77a11.32,11.32,0,0,0,3.5.59,2.61,2.61,0,0,0,2.53-1.49A115,115,0,0,0,24.4,26.55c.23,6.59,1.18,11.76,5.81,11.76,6.14,0,10.1-15.33,10.1-22.71C40.31,13.66,39.34,13.34,37.54,13.34Z"/>
+                <ellipse class="path2" cx="26" cy="25.85" rx="25" ry="24.85"/>
+              </svg>
+            </a>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </section>
+  
+  <!--  ### DESKTOP NAVIGATION ### -->
+  <section class="navWrapper">
+    <ul>
+      <li class="topLeft"> 
+        <button>
+          <!-- Logo icon -->
+          <a href="index.html" class="tooltip">
+            <span class="tooltiptext">Home</span>
+            <svg class="logoIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 370 370">
+              <path class="path1" d="M185,351.5A166.59,166.59,0,0,1,26.91,132.65C28.7,146.82,48.55,276.46,174.4,256.33c0,0-77,2.4-97.24-81,0,0-43.62,4.3-50.23-42.69a166.55,166.55,0,0,1,316.14,0c-6.61,47-50.23,42.69-50.23,42.69-20.23,83.45-97.24,81-97.24,81,125.84,20.13,145.7-109.51,147.49-123.68A166.59,166.59,0,0,1,185,351.5ZM185,0C82.83,0,0,82.83,0,185S82.83,370,185,370s185-82.83,185-185S287.17,0,185,0Z"/>
+              <path class="path1" d="M288.59,124.66c-13.49,42.23-57.14,39-57.14,39C243.16,245.32,185,250.29,185,250.29c117.52.71,103.59-125.63,103.59-125.63Z"/>
+              <path class="path1" d="M138.55,163.7s-43.65,3.19-57.14-39c0,0-13.93,126.34,103.59,125.63,0,0-58.16-5-46.45-86.59Z"/>
+              <path class="path1" d="M313.43,236.81c-1.78,28.45-39.75,39.39-80.56,29.45S185,263.07,185,263.07v29.55c.13-2,3.35-14.39,64.21-7.19,66,7.81,64.22-48.62,64.22-48.62Z"/>
+              <path class="path1" d="M185,292.88v-.26a1.71,1.71,0,0,0,0,.26Z"/>
+              <path class="path1" d="M185,292.88a1.71,1.71,0,0,0,0-.26v.26Z"/>
+              <path class="path1" d="M137.12,266.26c-40.81,9.94-78.78-1-80.56-29.45,0,0-1.82,56.43,64.22,48.62,60.86-7.2,64.08,5.2,64.21,7.19V263.07s-7.05-6.74-47.87,3.19Z"/>
+              <path class="path1" d="M185,247.14s85.57-57,0-143.73c-85.57,86.77,0,143.73,0,143.73Z"/>
+            </svg>
+          </a>
+        </button>
+        <button>
+          <a href="#" class="tooltip">
+            <span class="tooltiptext">Maybe someday 😉</span>
+            <!-- Language icon -->
+            <svg class="flagIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 51.71">        
+              <path class="path1" d="M18.83,32.27v1.3H8.88V18.75h9.76v1.3h-8.3v5.34h7.24v1.23H10.34v5.65Z"/>
+              <path class="path1" d="M30.33,33.57H28.91v-6a5.33,5.33,0,0,0-.56-2.78,2,2,0,0,0-1.78-.88,3.64,3.64,0,0,0-1.64.4,4.49,4.49,0,0,0-1.43,1.1A4.2,4.2,0,0,0,22.61,27v6.62H21.19V22.74h1.29v2.47a4.93,4.93,0,0,1,1.15-1.38,5.47,5.47,0,0,1,1.61-.93,5.36,5.36,0,0,1,1.86-.33,3.25,3.25,0,0,1,1.52.33,2.61,2.61,0,0,1,1,1,4.41,4.41,0,0,1,.54,1.47,10.23,10.23,0,0,1,.17,1.92Z"/>
+              <path class="path1" d="M37.72,33.78a4.7,4.7,0,0,1-2-.46,5.3,5.3,0,0,1-1.62-1.24,5.94,5.94,0,0,1-1-1.79,5.83,5.83,0,0,1-.38-2.06A6.36,6.36,0,0,1,33,26.07a5.7,5.7,0,0,1,1-1.81A5,5,0,0,1,35.63,23a4.56,4.56,0,0,1,2-.45,4.22,4.22,0,0,1,2.44.7A6.85,6.85,0,0,1,41.85,25V22.74h1.27V33.62a4.31,4.31,0,0,1-.72,2.53,4.45,4.45,0,0,1-1.94,1.55,6.64,6.64,0,0,1-2.66.52,5.85,5.85,0,0,1-3-.67,5.37,5.37,0,0,1-1.88-1.79l.87-.69a4,4,0,0,0,1.72,1.52,5.28,5.28,0,0,0,2.29.5,5,5,0,0,0,2-.37,3.4,3.4,0,0,0,1.42-1.14,3.29,3.29,0,0,0,.53-1.91V31.52A4.72,4.72,0,0,1,40,33.16,4.54,4.54,0,0,1,37.72,33.78Zm.39-1.19a3.45,3.45,0,0,0,1.24-.23,4.4,4.4,0,0,0,1.1-.62,4,4,0,0,0,.83-.86,2.26,2.26,0,0,0,.42-1V26.54a4.45,4.45,0,0,0-2.22-2.37A3.6,3.6,0,0,0,38,23.82a3.37,3.37,0,0,0-1.64.39,3.74,3.74,0,0,0-1.21,1,5.17,5.17,0,0,0-1,3,4.46,4.46,0,0,0,.32,1.66,4.63,4.63,0,0,0,.86,1.39,3.8,3.8,0,0,0,1.3.95A3.67,3.67,0,0,0,38.11,32.59Z"/>
+              <ellipse class="path2" cx="26" cy="25.85" rx="25" ry="24.85"/>
+            </svg>
+          </a>
+        </button>
+        <audio id="music" preload="auto" loop>
+          <source src="assets/files/music/IndianDreams.mp3" type="audio/mp3">
+          <source src="assets/files/music/IndianDreams.wav" type="audio/wav">
+        </audio>
+        <button id="musicIcons" class="tooltip musicPlay">
+          <span class="tooltiptext">Music</span>
+          <!-- Music play icon -->
+          <svg class="playIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 51.71">
+            <path class="path1" d="M37.67,25.22,21.16,12.6a.85.85,0,0,0-.88-.09.86.86,0,0,0-.46.76V38.44a.84.84,0,0,0,.46.75,1.17,1.17,0,0,0,.45.09.63.63,0,0,0,.43-.17L37.67,26.55a.81.81,0,0,0,.33-.66A.84.84,0,0,0,37.67,25.22ZM21.56,36.75V15L35.78,25.89Z"/>
+            <ellipse class="path2" cx="26" cy="25.85" rx="25" ry="24.85"/>
+          </svg>
+          <!-- Music pause icon -->
+          <svg class="pauseIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 51.71">
+            <path class="path1" d="M19,11.92a.94.94,0,0,0-.94.94v26a.94.94,0,0,0,1.88,0v-26A.94.94,0,0,0,19,11.92Zm14.06,0a.94.94,0,0,0-.94.94v26a.94.94,0,0,0,1.88,0v-26A.94.94,0,0,0,33,11.92Z"/>
+            <ellipse class="path2" cx="26" cy="25.85" rx="25" ry="24.85"/>
+          </svg>
+        </button>
+        <!-- Facebook icon -->
+        <button>
+          <a href="#" target="blank" class="tooltip">
+            <span class="tooltiptext">Facebook</span>
+            <svg class="facebookIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 51.71">
+              <path class="path1" d="M34.23,24.8H24.72V19.52c0-3.21.75-5.48,2.21-6.76a4.59,4.59,0,0,1,3.4-1.12h3.9a.78.78,0,0,0,0-1.55H30.49a6.26,6.26,0,0,0-4.56,1.47c-1.83,1.58-2.75,4.26-2.75,8V24.8H17.77a.78.78,0,0,0,0,1.55h5.41v14.5a.77.77,0,1,0,1.54,0V26.35h9.51a.78.78,0,0,0,0-1.55Z"/>
+              <ellipse class="path2" cx="26" cy="25.85" rx="25" ry="24.85"/>
+            </svg>
+          </a>
+        </button>
+        <button>
+          <!-- Wolt icon -->
+          <a href="#" target="blank" class="tooltip">
+            <span class="tooltiptext">Wolt</span>
+            <svg class="woltIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 51.7">
+              <path class="path1" d="M37.54,13.34c-.78,0-1.49,0-1.83.07-.69.07-.92.73-.87,1.37C35.57,24.1,33.51,35,31.19,35,29.45,35,29,29.89,29,25.38c0-2.66.16-5.24.21-7.49,0-.84-.28-1-.89-1.07a6.79,6.79,0,0,0-2.5.09c-.69.16-.87.73-1.6,2.47C20.53,28.08,17,35.07,17,35.07c-.94-7,.27-13.81,1.28-18.76.14-.68-.18-1.09-.75-1.09a7.92,7.92,0,0,0-3.41.54A2.43,2.43,0,0,0,13,17.67c-1.14,5.69-1.87,12.81-.73,18.33.25,1.19.51,1.47,1,1.77a11.32,11.32,0,0,0,3.5.59,2.61,2.61,0,0,0,2.53-1.49A115,115,0,0,0,24.4,26.55c.23,6.59,1.18,11.76,5.81,11.76,6.14,0,10.1-15.33,10.1-22.71C40.31,13.66,39.34,13.34,37.54,13.34Z"/>
+              <ellipse class="path2" cx="26" cy="25.85" rx="25" ry="24.85"/>
+            </svg>
+          </a>
+        </button>
+      </li>
+      <li class="topRight current"><a href="menu.html">Menu</a></li>
+      <li class="btmLeft"><a href="#">Contact</a></li>
+      <li class="btmRight"><a href="#">About</a></li>
+    </ul>
+  </section>
+
+  <!-- ### MENU PAGE ### -->
+  <section class="menuContent">
+    <div class="scrollToTopBtn">
+      <a href="#page1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.32 18.61">
+          <path class="path1" d="M34,.31a1.07,1.07,0,0,0-1.52,0L17.12,16,1.84.41A1.07,1.07,0,0,0,.32.4a1.06,1.06,0,0,0,0,1.51l16,16.37a1.07,1.07,0,0,0,.77.33,1,1,0,0,0,.76-.33L34,1.82A1.07,1.07,0,0,0,34,.31Z"/>
+        </svg>
+      </a>
+    </div>
+    <div id="page1" class="page1">
+      <div class="chilliWrapper">
+        <div class="smallElement" id="smallElement1"></div>
+        <div class="smallElement" id="smallElement2"></div>
+        <div class="mainFire"></div>
+        <img class="chilliIcon" src="assets/files/svg/chilli.svg">
+      </div>
+      <div class="bg1-middle-wrap">
+        <!-- Visible only in mobile -->
+        <div class="mobileWrapper">
+          <div class="mobileList">
+            <div id="dropDownBtn" class="dropDownBtn">
+              <span>Toidud</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.32 18.61">
+                <path class="path1" d="M34,.31a1.07,1.07,0,0,0-1.52,0L17.12,16,1.84.41A1.07,1.07,0,0,0,.32.4a1.06,1.06,0,0,0,0,1.51l16,16.37a1.07,1.07,0,0,0,.77.33,1,1,0,0,0,.76-.33L34,1.82A1.07,1.07,0,0,0,34,.31Z"/>
+              </svg>
+            </div>
+            <div class="dropDownBox">
+              <ul class="dropDownMenu">
+                <li class="dropDownItem"><a href="#page2">Eelroad</a></li>
+                <li class="dropDownItem"><a href="#page3">Salatid</a></li>
+                <li class="dropDownItem"><a href="#page4">Supid</a></li>
+                <li class="dropDownItem"><a href="#page5">Tandoori road</a></li>
+                <li class="dropDownItem"><a href="#page6">Taimetoidud</a></li>
+                <li class="dropDownItem"><a href="#page7">Kanaliha</a></li>
+                <li class="dropDownItem"><a href="#page8">Pardiliha</a></li>
+                <li class="dropDownItem"><a href="#page9">Loomaliha</a></li>
+                <li class="dropDownItem"><a href="#page10">Lambaliha</a></li>
+                <li class="dropDownItem"><a href="#page11">Sealiha</a></li>
+                <li class="dropDownItem"><a href="#page12">Mereannid</a></li>
+                <li class="dropDownItem"><a href="#page13">Tandoori leib</a></li>
+                <li class="dropDownItem"><a href="#page14">Riis & nuudel</a></li>
+                <li class="dropDownItem"><a href="#page15">Nuudliroad</a></li>
+                <li class="dropDownItem"><a href="#page16">Lastele</a></li>
+                <li class="dropDownItem"><a href="#page17">Magustoidud</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Visible only medium devices (landscape tablets, 768px and up) -->
+        <div class="desktopWrapper">
+          <h1 class="page1-title">M E N U</h1>
+          <div class="foodLinksWrapper">
+            <ul class="foodLinks">
+              <li class="foodLink"><a href="#page2">Eelroad</a></li>
+              <li class="foodLink"><a href="#page3">Salatid</a></li>
+              <li class="foodLink"><a href="#page4">Supid</a></li>
+              <li class="foodLink"><a href="#page5">Tandoori road</a></li>
+              <li class="foodLink"><a href="#page6">Taimetoidud</a></li>
+            </ul>
+            <ul class="foodLinks">
+              <li class="foodLink"><a href="#page7">Kanaliha</a></li>
+              <li class="foodLink"><a href="#page8">Pardiliha</a></li>
+              <li class="foodLink"><a href="#page9">Loomaliha</a></li>
+              <li class="foodLink"><a href="#page10">Lambaliha</a></li>
+              <li class="foodLink"><a href="#page11">Sealiha</a></li>
+              <li class="foodLink"><a href="#page12">Mereannid</a></li>
+            </ul>
+            <ul class="foodLinks">
+              <li class="foodLink"><a href="#page13">Tandoori leib</a></li>
+              <li class="foodLink"><a href="#page14">Riis & nuudel</a></li>
+              <li class="foodLink"><a href="#page15">Riisi road</a></li>
+              <li class="foodLink"><a href="#page16">Lastele</a></li>
+              <li class="foodLink"><a href="#page17">Magustoidud</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="page1-desc">
+          <p>Valmistan teile autentseid Aasia roogasid.</p>
+        </div>
+      </div>
+    </div>
+    <div id="page2" class="page2 page">
+      <div class="pg2-middle-wrap page-middle-wrap">
+        <div class="pg2-back page-pack"></div>
+        <div class="pg2-photo-wrap page-photo-wrap">
+          <div class="pg2-photo page-photo"></div>
+        </div>
+        <div class="pg2-white-desc page-white-desc">
+          <h2>EELROAD</h2>
+          <div class="titleBottomBorder">
+            <hr class="hr1"><hr class="hr2"><hr class="hr3">
+          </div>
+          <div class="menuItemWrapper">
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>1. KEVADRULLID JUURVILJADEGA</h3>
+                <div class="menuLine"></div>
+                <p>€ 5.00</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>2. KEVADRULLID JUURVILJADE JA KANAGA</h3>
+                <div class="menuLine"></div>
+                <p>€ 5.00</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>3. BAKLAŽAANI SUUPISTE</h3>
+                  <img class="menuItemSpice" src="assets/files/svg/hot2.svg">
+                <div class="menuLine"></div>
+                <p>€ 6.00</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Praetud baklažaan tofuga mee-tsilli kastmes</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>4. SALT & PEPPER HIIDKREVEID</h3>
+                  <img class="menuItemSpice" src="assets/files/svg/hot2.svg">
+                <div class="menuLine"></div>
+                <p>€ 12.90</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Krõbedaks praetud hiidkrevetid</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>5. SATAY KASTMES HIIDKREVETID</h3>
+                  <img class="menuItemSpice" src="assets/files/svg/hot2.svg">
+                <div class="menuLine"></div>
+                <p>€ 9.90</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>6. KANATIIVAD</h3>
+                  <img class="menuItemSpice" src="assets/files/svg/hot2.svg">
+                <div class="menuLine"></div>
+                <p>€ 7.00</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Tšilli kastmes</p>
+                <p class="menuItemDescription">Mee kastmes</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>7. SEARIBID</h3>
+                <div class="menuLine"></div>
+                <p>€ 8.00</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Hoisini kastmes</p>
+                <p class="menuItemDescription">Küüslaugu kastmes</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader current">
+                <h3>8. PAKORAD</h3>
+                <div class="menuLine"></div>
+                <p>€ 6.00</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Paniir</p>
+                <p class="menuItemDescription">Baklažaani-kikerherne kastmes</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>9. TŠILLI KANA</h3>
+                  <img class="menuItemSpice" src="assets/files/svg/hot2.svg">
+                <div class="menuLine"></div>
+                <p>€ 7.90</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>10. KANA INGVERI JA MEEGA</h3>
+                  <img class="menuItemSpice" src="assets/files/svg/hot2.svg">
+                <div class="menuLine"></div>
+                <p>€ 7.90</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>11. SIBUL BAHIJA KIKERHERNE TAIGNAS</h3>
+                <div class="menuLine"></div>
+                <p>€ 6.00</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>12. TŠILLI PANEER</h3>
+                  <img class="menuItemSpice" src="assets/files/svg/hot2.svg">
+                <div class="menuLine"></div>
+                <p>€ 7.90</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="page3" class="page3 page">
+      <div class="pg3-middle-wrap page-middle-wrap">
+        <div class="pg3-back page-pack"></div>
+        <div class="pg3-photo-wrap page-photo-wrap">
+          <div class="pg3-photo page-photo"></div>
+        </div>
+        <div class="pg3-white-desc page-white-desc">
+          <h2>SALATID</h2>
+          <div class="titleBottomBorder">
+            <hr class="hr1"><hr class="hr2"><hr class="hr3">
+          </div>
+          <div class="menuItemWrapper">
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>20. PEKINGI KANASALAT</h3>
+                <img class="menuItemSpice" src="assets/files/svg/hot2.svg">
+                <div class="menuLine"></div>
+                <p>€ 7.90</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader current">
+                <h3>21. TAI VEISELIHA SALAT</h3>
+                <img class="menuItemSpice spiceIcon2" src="assets/files/svg/hot2.svg">
+                <img class="menuItemSpice spiceIcon2" src="assets/files/svg/hot2.svg">
+                <div class="menuLine"></div>
+                <p>€ 8.90</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Veisefilee värskete köögiviljadega tšilli kastmes</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>22. KANA TIKKA MASALA SALAT</h3>
+                <img class="menuItemSpice" src="assets/files/svg/hot2.svg">
+                <div class="menuLine"></div>
+                <p>€ 7.90</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Tanduuri kanasalat kerges vürtsikas kastmes</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>23. TAI HIIDKREVETI SALAT</h3>
+                <div class="menuLine"></div>
+                <p>€ 9.90</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="page4" class="page4 page">
+      <div class="pg4-middle-wrap page-middle-wrap">
+        <div class="pg4-back page-pack"></div>
+        <div class="pg4-photo-wrap page-photo-wrap">
+          <div class="pg4-photo page-photo"></div>
+        </div>
+        <div class="pg4-white-desc page-white-desc">
+          <h2>SUPID</h2>
+          <div class="titleBottomBorder">
+            <hr class="hr1"><hr class="hr2"><hr class="hr3">
+          </div>
+          <div class="menuItemWrapper">
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>30. INDIA TOMATISUPP</h3>
+                <div class="menuLine"></div>
+                <p>€ 5.00</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>31. DHAL LÄÄTSESUPP</h3>
+                <div class="menuLine"></div>
+                <p>€ 5.00</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>32. KANASUPP NUUDLITEGA</h3>
+                <div class="menuLine"></div>
+                <p>€ 5.00</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>33. TOM KHA</h3>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Kookospiima supp</p>
+              </div>
+              <div class="menuItemHeader extraMenuItems">
+                <h3>Kanaga</h3>
+                <div class="menuLine"></div>
+                <p>€ 5.00</p>
+              </div>
+              <div class="menuItemHeader extraMenuItems">
+                <h3>Krevettidega</h3>
+                <div class="menuLine"></div>
+                <p>€ 6.00</p>
+              </div>
+              <div class="menuItemHeader extraMenuItems">
+                <h3>Hiidkrevettidega</h3>
+                <div class="menuLine"></div>
+                <p>€ 6.50</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader customAlignment current">
+                <h3>34. TOM YUM</h3>
+                <img class="menuItemSpice spiceIcon2" src="assets/files/svg/hot2.svg">
+                <img class="menuItemSpice spiceIcon2" src="assets/files/svg/hot2.svg">
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Traditsiooniline Tai terav-hapu supp</p>
+              </div>
+              <div class="menuItemHeader extraMenuItems">
+                <h3>Kanaga</h3>
+                <div class="menuLine"></div>
+                <p>€ 5.00</p>
+              </div>
+              <div class="menuItemHeader extraMenuItems">
+                <h3>Krevettidega</h3>
+                <div class="menuLine"></div>
+                <p>€ 6.00</p>
+              </div>
+              <div class="menuItemHeader extraMenuItems">
+                <h3>Hiidkrevettidega</h3>
+                <div class="menuLine"></div>
+                <p>€ 6.50</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>35. PHO SUPP</h3>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Nuudlite, tšilli ja korjandriga</p>
+              </div>
+              <div class="menuItemHeader extraMenuItems">
+                <h3>Kanaga</h3>
+                <div class="menuLine"></div>
+                <p>€ 5.00</p>
+              </div>
+              <div class="menuItemHeader extraMenuItems">
+                <h3>Krevettidega</h3>
+                <div class="menuLine"></div>
+                <p>€ 6.00</p>
+              </div>
+              <div class="menuItemHeader extraMenuItems">
+                <h3>Hiidkrevettidega</h3>
+                <div class="menuLine"></div>
+                <p>€ 6.50</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="page5" class="page5 page">
+      <div class="pg5-middle-wrap page-middle-wrap">
+        <div class="pg5-back page-pack"></div>
+        <div class="pg5-photo-wrap page-photo-wrap">
+          <div class="pg5-photo page-photo"></div>
+        </div>
+        <div class="pg5-white-desc page-white-desc">
+          <h2>TANDOORI ROAD</h2>
+          <div class="titleBottomBorder">
+            <hr class="hr1"><hr class="hr2"><hr class="hr3">
+          </div>
+          <div class="menuItemWrapper">
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>40. KANA TIKKA</h3>
+                <div class="menuLine"></div>
+                <p>€ 8.00</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Tandooris küpsenud Indiapärane kanafilee</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>41. MALAI KANA TIKKA</h3>
+                <div class="menuLine"></div>
+                <p>€ 8.00</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Tandooris küpsenud kreemine kanafilee</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>42. HIIDKREVETI TIKKA</h3>
+                <div class="menuLine"></div>
+                <p>€ 12.90</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Tandooris küpsenud India vürtides marineeritud hiidkrevetid</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="page6" class="page6 page">
+      <div class="pg6-middle-wrap page-middle-wrap">
+        <div class="pg6-back page-pack"></div>
+        <div class="pg6-photo-wrap page-photo-wrap">
+          <div class="pg6-photo page-photo"></div>
+        </div>
+        <div class="pg6-white-desc page-white-desc">
+          <h2>TAIMETOIDUD</h2>
+          <div class="titleBottomBorder">
+            <hr class="hr1"><hr class="hr2"><hr class="hr3">
+          </div>
+          <div class="menuItemWrapper">
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>50. PANEER MASALA</h3>
+                <div class="menuLine"></div>
+                <p>€ 8.50</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Paneer teravas masala kastmes</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>51. PALAK PANEER</h3>
+                <div class="menuLine"></div>
+                <p>€ 8.50</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Paneer paksus spinati kastmes</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>52. TADKA KOLLANE DHAL</h3>
+                <div class="menuLine"></div>
+                <p>€ 8.50</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Kollased läätsed karri kastmes</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>53. SABZI TAWA JUURVILJAD</h3>
+                <img class="menuItemSpice" src="assets/files/svg/hot2.svg">
+                <div class="menuLine"></div>
+                <p>€ 8.50</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">India karri kastmes</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader current">
+                <h3>54. CHANA MASALA KIKERHERNED</h3>
+                <img class="menuItemSpice" src="assets/files/svg/hot2.svg">
+                <div class="menuLine"></div>
+                <p>€ 8.50</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">India karri kastmes</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>55. BAKLAŽAAN UBADEGA</h3>
+                <img class="menuItemSpice" src="assets/files/svg/hot2.svg">
+                <div class="menuLine"></div>
+                <p>€ 8.50</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Baklažaan paprika ning sibulaga mustade ubade-hoisini kastmes</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>56. KÖÖGIVILJAD KÜÜSLAUGU </br> KASTMES</h3>
+                <img class="menuItemSpice" src="assets/files/svg/hot2.svg">
+                <div class="menuLine"></div>
+                <p>€ 8.50</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>57. TAI KÖÖGIVILJA KARRI</h3>
+                <div class="menuLine"></div>
+                <p>€ 7.50</p>
+              </div>
+              <div class="menuItemHeader extraSpiceScale">
+                <h3>Punane karri</h3>
+                <img class="menuItemSpice spiceIcon3" src="assets/files/svg/hot3.svg">
+                <img class="menuItemSpice spiceIcon3" src="assets/files/svg/hot3.svg">
+                <img class="menuItemSpice spiceIcon3" src="assets/files/svg/hot3.svg">
+              </div>
+              <div class="menuItemHeader extraSpiceScale">
+                <h3>Roheline karri</h3>
+                <img class="menuItemSpice spiceIcon2" src="assets/files/svg/hot2.svg">
+                <img class="menuItemSpice spiceIcon2" src="assets/files/svg/hot2.svg">
+              </div>
+              <div class="menuItemHeader extraSpiceScale">
+                <h3>Kollane karri</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="page7" class="page7 page">
+      <div class="pg7-middle-wrap page-middle-wrap">
+        <div class="pg7-back page-pack"></div>
+        <div class="pg7-photo-wrap page-photo-wrap">
+          <div class="pg7-photo page-photo"></div>
+        </div>
+        <div class="pg7-white-desc page-white-desc">
+          <h2>KANALIHA</h2>
+          <div class="titleBottomBorder">
+            <hr class="hr1"><hr class="hr2"><hr class="hr3">
+          </div>
+          <div class="menuItemWrapper">
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>60. KANA TIKKA MASALA</h3>
+                <div class="menuLine"></div>
+                <p>€ 9.00</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Kanafilee teravas masala kastmes</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>61. MALAI TIKKA MASALA</h3>
+                <div class="menuLine"></div>
+                <p>€ 9.00</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Kanafilee kreemises juustukastmes</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>62. VÕIKANA</h3>
+                <div class="menuLine"></div>
+                <p>€ 9.00</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Kanafilee kreemises tomatikastmes</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>63. PALAK KANA</h3>
+                <div class="menuLine"></div>
+                <p>€ 9.00</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Kanafilee kreemises spinatikastmes</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader current">
+                <h3>64. VINDALOO KANA</h3>
+                <img class="menuItemSpice spiceIcon3" src="assets/files/svg/hot3.svg">
+                <img class="menuItemSpice spiceIcon3" src="assets/files/svg/hot3.svg">
+                <img class="menuItemSpice spiceIcon3" src="assets/files/svg/hot3.svg">
+                <div class="menuLine"></div>
+                <p>€ 9.00</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Kanafilee vürtsikas tomati-kookose kastmes</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>65. KRÕBE KANA</h3>
+                <img class="menuItemSpice" src="assets/files/svg/hot2.svg">
+                <div class="menuLine"></div>
+                <p>€ 9.00</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Kanafilee seesamiga magusas tšilli kastmes</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>66. MAGUS-HAPU KANA</h3>
+                <div class="menuLine"></div>
+                <p>€ 9.00</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Kanafilee juurviljade ja ananassiga magus-hapus kastmes</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>67. HONG-KONGI KANA</h3>
+                <img class="menuItemSpice" src="assets/files/svg/hot2.svg">
+                <div class="menuLine"></div>
+                <p>€ 9.00</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Kanafilee bambuse ja köögiviljadega teravas soja kastmes</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>68. KANA INDIA PÄHKLITEGA</h3>
+                <img class="menuItemSpice" src="assets/files/svg/hot2.svg">
+                <div class="menuLine"></div>
+                <p>€ 9.00</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Kanafilee seente ja pähklitega soja-küüslaugu kastmes</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>69. KÜÜSLAUGU KANA</h3>
+                <div class="menuLine"></div>
+                <p>€ 9.00</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Kanafilee juurviljadega küüslaugu kastmes</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>70. KANA MUSTA PIPRAGA</h3>
+                <div class="menuLine"></div>
+                <p>€ 9.00</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Kanafilee juurviljadega musta pipra kastmes</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>71. TAI KANA KARRI</h3>
+                <div class="menuLine"></div>
+                <p>€ 9.00</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Kanafilee kookospiima-karri kastmes</p>
+              </div>
+              <div class="menuItemHeader extraSpiceScale">
+                <h3>Punane karri</h3>
+                <img class="menuItemSpice spiceIcon3" src="assets/files/svg/hot3.svg">
+                <img class="menuItemSpice spiceIcon3" src="assets/files/svg/hot3.svg">
+                <img class="menuItemSpice spiceIcon3" src="assets/files/svg/hot3.svg">
+              </div>
+              <div class="menuItemHeader extraSpiceScale">
+                <h3>Roheline karri</h3>
+                <img class="menuItemSpice spiceIcon2" src="assets/files/svg/hot2.svg">
+                <img class="menuItemSpice spiceIcon2" src="assets/files/svg/hot2.svg">
+              </div>
+              <div class="menuItemHeader extraSpiceScale">
+                <h3>Kollane karri</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="page8" class="page8 page">
+      <div class="pg8-middle-wrap page-middle-wrap">
+        <div id="page8" class="pg8-back page-pack"></div>
+        <div class="pg8-photo-wrap page-photo-wrap">
+          <div class="pg8-photo page-photo"></div>
+        </div>
+        <div class="pg8-white-desc page-white-desc">
+          <h2>PARDILIHA</h2>
+          <div class="titleBottomBorder">
+            <hr class="hr1"><hr class="hr2"><hr class="hr3">
+          </div>
+          <div class="menuItemWrapper">
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>80. BHUNA PART</h3>
+                <img class="menuItemSpice" src="assets/files/svg/hot2.svg">
+                <div class="menuLine"></div>
+                <p>€ 11.90</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Pardifilee tomati, paprika ja india vürtsidega</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>81. KASHMIRI PART</h3>
+                <img class="menuItemSpice spiceIcon2" src="assets/files/svg/hot2.svg">
+                <img class="menuItemSpice spiceIcon2" src="assets/files/svg/hot2.svg">
+                <div class="menuLine"></div>
+                <p>€ 11.90</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Pardifilee ananassi ja paprikaga vürtsikas india karri kastmes</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader current">
+                <h3>82. KRÕBE PART</h3>
+                <div class="menuLine"></div>
+                <p>€ 11.90</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Krõbe pardifilee mee-tšilli kastmes</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>83. HONG-KONGI PART</h3>
+                <img class="menuItemSpice" src="assets/files/svg/hot2.svg">
+                <div class="menuLine"></div>
+                <p>€ 11.90</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Pardifilee bambuse ja köögiviljadega soja kastmes</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>84. AUSTRI KASTMES PART</h3>
+                <div class="menuLine"></div>
+                <p>€ 11.90</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>85. TAI KARRI PART</h3>
+                <div class="menuLine"></div>
+                <p>€ 11.90</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Pardifilee kookospiima karri kastmes</p>
+              </div>
+              <div class="menuItemHeader extraSpiceScale">
+                <h3>Punane karri</h3>
+                <img class="menuItemSpice spiceIcon3" src="assets/files/svg/hot3.svg">
+                <img class="menuItemSpice spiceIcon3" src="assets/files/svg/hot3.svg">
+                <img class="menuItemSpice spiceIcon3" src="assets/files/svg/hot3.svg">
+              </div>
+              <div class="menuItemHeader extraSpiceScale">
+                <h3>Roheline karri</h3>
+                <img class="menuItemSpice spiceIcon2" src="assets/files/svg/hot2.svg">
+                <img class="menuItemSpice spiceIcon2" src="assets/files/svg/hot2.svg">
+              </div>
+              <div class="menuItemHeader extraSpiceScale">
+                <h3>Kollane karri</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="page9" class="page9 page">
+      <div class="pg9-middle-wrap page-middle-wrap">
+        <div class="pg9-back page-pack"></div>
+        <div class="pg9-photo-wrap page-photo-wrap">
+          <div class="pg9-photo page-photo"></div>
+        </div>
+        <div class="pg9-white-desc page-white-desc">
+          <h2>LOOMALIHA</h2>
+          <div class="titleBottomBorder">
+            <hr class="hr1"><hr class="hr2"><hr class="hr3">
+          </div>
+          <div class="menuItemWrapper">
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>90. VEISEFILEE MUSTA PIPRAGA</h3>
+                <img class="menuItemSpice" src="assets/files/svg/hot2.svg">
+                <div class="menuLine"></div>
+                <p>€ 11.90</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Veisefilee juurviljadega musta pipra kastmes</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>91. HONG-KONGI VEIS </h3>
+                <img class="menuItemSpice" src="assets/files/svg/hot2.svg">
+                <div class="menuLine"></div>
+                <p>€ 11.90</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Veisefilee bambuse ja köögiviljadega teravas soja kastmes</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>92. KUNG PAO VEIS</h3>
+                <img class="menuItemSpice" src="assets/files/svg/hot2.svg">
+                <div class="menuLine"></div>
+                <p>€ 11.90</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Veisefilee India pähklitega oa-soja kastmes</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>93. VEISEFILEE AUSTRI KASTMES</h3>
+                <div class="menuLine"></div>
+                <p>€ 11.90</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>94. VEISEFILEE BBQ KASTMES</h3>
+                <div class="menuLine"></div>
+                <p>€ 11.90</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader current">
+                <h3>95. VOLCANO VEIS</h3>
+                <img class="menuItemSpice" src="assets/files/svg/hot3.svg">
+                <img class="menuItemSpice" src="assets/files/svg/hot3.svg">
+                <img class="menuItemSpice" src="assets/files/svg/hot3.svg">
+                <img class="menuItemSpice" src="assets/files/svg/hot3.svg">
+                <div class="menuLine"></div>
+                <p>€ 11.90</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Veisefilee juurviljadega tšilli, küüslaugu ja ingveri tuliteravas kastmes</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>96. VEISELIHA TAI KARRI KASTMES</h3>
+                <div class="menuLine"></div>
+                <p>€ 11.90</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Veisefilee kookospiima karri kastmes</p>
+              </div>
+              <div class="menuItemHeader extraSpiceScale">
+                <h3>Punane karri</h3>
+                <img class="menuItemSpice spiceIcon3" src="assets/files/svg/hot3.svg">
+                <img class="menuItemSpice spiceIcon3" src="assets/files/svg/hot3.svg">
+                <img class="menuItemSpice spiceIcon3" src="assets/files/svg/hot3.svg">
+              </div>
+              <div class="menuItemHeader extraSpiceScale">
+                <h3>Roheline karri</h3>
+                <img class="menuItemSpice spiceIcon2" src="assets/files/svg/hot2.svg">
+                <img class="menuItemSpice spiceIcon2" src="assets/files/svg/hot2.svg">
+              </div>
+              <div class="menuItemHeader extraSpiceScale">
+                <h3>Kollane karri</h3>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>97. WOKITUD VEISELIHA</h3>
+                <div class="menuLine"></div>
+                <p>€ 11.90</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Vokitud veisefilee bambusevõrsetega ja brokoliga</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="page10" class="page10 page">
+      <div class="pg10-middle-wrap page-middle-wrap">
+        <div class="pg10-back page-pack"></div>
+        <div class="pg10-photo-wrap page-photo-wrap">
+          <div class="pg10-photo page-photo"></div>
+        </div>
+        <div class="pg10-white-desc page-white-desc">
+          <h2>LAMBALIHA</h2>
+          <div class="titleBottomBorder">
+            <hr class="hr1"><hr class="hr2"><hr class="hr3">
+          </div>
+          <div class="menuItemWrapper">
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>100. SAAG GOSHT</h3>
+                <div class="menuLine"></div>
+                <p>€ 11.90</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Lambaliha paksus spinati kastmes</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>101. GOSHT DAHI WALA</h3>
+                <div class="menuLine"></div>
+                <p>€ 11.90</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Lambaliha jogurti masala kastmes</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>102. KOLKATA TARIWALA LAMMAS</h3>
+                <img class="menuItemSpice spiceIcon2" src="assets/files/svg/hot2.svg">
+                <img class="menuItemSpice spiceIcon2" src="assets/files/svg/hot2.svg">
+                <div class="menuLine"></div>
+                <p>€ 11.90</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Peakoka salajase retseptiga lambaliha</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader current">
+                <h3>103. GOA LAMBA VINDALOO</h3>
+                <img class="menuItemSpice spiceIcon3" src="assets/files/svg/hot3.svg">
+                <img class="menuItemSpice spiceIcon3" src="assets/files/svg/hot3.svg">
+                <img class="menuItemSpice spiceIcon3" src="assets/files/svg/hot3.svg">
+                <div class="menuLine"></div>
+                <p>€ 11.90</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Lambaliha vürtsikas tomati-kookose kastmes</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>104. TŠILLI JA KÜÜSLAUGUGA LAMMAS</h3>
+                <img class="menuItemSpice" src="assets/files/svg/hot2.svg">
+                <div class="menuLine"></div>
+                <p>€ 11.90</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Lambaliha bambuse ja köögiviljadega teravas soja kastmes</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>105. TAI KARRI LAMBALIHAST</h3>
+                <div class="menuLine"></div>
+                <p>€ 11.90</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Lambaliha kookospiima-karri kastmes</p>
+              </div>
+              <div class="menuItemHeader extraSpiceScale">
+                <h3>Punane karri</h3>
+                <img class="menuItemSpice spiceIcon3" src="assets/files/svg/hot3.svg">
+                <img class="menuItemSpice spiceIcon3" src="assets/files/svg/hot3.svg">
+                <img class="menuItemSpice spiceIcon3" src="assets/files/svg/hot3.svg">
+              </div>
+              <div class="menuItemHeader extraSpiceScale">
+                <h3>Roheline karri</h3>
+                <img class="menuItemSpice spiceIcon2" src="assets/files/svg/hot2.svg">
+                <img class="menuItemSpice spiceIcon2" src="assets/files/svg/hot2.svg">
+              </div>
+              <div class="menuItemHeader extraSpiceScale">
+                <h3>Kollane karri</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="page11" class="page11 page">
+      <div class="pg11-middle-wrap page-middle-wrap">
+        <div class="pg11-back page-pack"></div>
+        <div class="pg11-photo-wrap page-photo-wrap">
+          <div class="pg11-photo page-photo"></div>
+        </div>
+        <div class="pg11-white-desc page-white-desc">
+          <h2>SEALIHA</h2>
+          <div class="titleBottomBorder">
+            <hr class="hr1"><hr class="hr2"><hr class="hr3">
+          </div>
+          <div class="menuItemWrapper">
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>110. BHUNA SEALIHA</h3>
+                <img class="menuItemSpice" src="assets/files/svg/hot2.svg">
+                <div class="menuLine"></div>
+                <p>€ 9.00</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Seafilee teravas masala kastmes</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>111. VINDALOO SEALIHA</h3>
+                <img class="menuItemSpice spiceIcon3" src="assets/files/svg/hot3.svg">
+                <img class="menuItemSpice spiceIcon3" src="assets/files/svg/hot3.svg">
+                <img class="menuItemSpice spiceIcon3" src="assets/files/svg/hot3.svg">
+                <div class="menuLine"></div>
+                <p>€ 9.00</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Seafilee vürtsikas tomati-kookose kastmes</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>112. KRÕBE SEALIHA</h3>
+                <img class="menuItemSpice" src="assets/files/svg/hot2.svg">
+                <div class="menuLine"></div>
+                <p>€ 9.00</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Seafilee seesamiga magusas tšilli kastmes</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader current">
+                <h3>113. KÜÜSLAUGU JA TŠILLIGA SEALIHA</h3>
+                <img class="menuItemSpice" src="assets/files/svg/hot2.svg">
+                <div class="menuLine"></div>
+                <p>€ 9.00</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>114. TAI KARRI SEALIHAGA</h3>
+                <div class="menuLine"></div>
+                <p>€ 9.00</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Seafilee kookospiima-karri kastmes</p>
+              </div>
+              <div class="menuItemHeader extraSpiceScale">
+                <h3>Punane karri</h3>
+                <img class="menuItemSpice spiceIcon3" src="assets/files/svg/hot3.svg">
+                <img class="menuItemSpice spiceIcon3" src="assets/files/svg/hot3.svg">
+                <img class="menuItemSpice spiceIcon3" src="assets/files/svg/hot3.svg">
+              </div>
+              <div class="menuItemHeader extraSpiceScale">
+                <h3>Roheline karri</h3>
+                <img class="menuItemSpice spiceIcon2" src="assets/files/svg/hot2.svg">
+                <img class="menuItemSpice spiceIcon2" src="assets/files/svg/hot2.svg">
+              </div>
+              <div class="menuItemHeader extraSpiceScale">
+                <h3>Kollane karri</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="page12" class="page12 page">
+      <div class="pg12-middle-wrap page-middle-wrap">
+        <div class="pg12-back page-pack"></div>
+        <div class="pg12-photo-wrap page-photo-wrap">
+          <div class="pg12-photo page-photo"></div>
+        </div>
+        <div class="pg12-white-desc page-white-desc">
+          <h2>MEREANNID</h2>
+          <div class="titleBottomBorder">
+            <hr class="hr1"><hr class="hr2"><hr class="hr3">
+          </div>
+          <div class="menuItemWrapper">
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>120. KALA MASALA</h3>
+                <img class="menuItemSpice" src="assets/files/svg/hot2.svg">
+                <div class="menuLine"></div>
+                <p>€ 10.90</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Kalafilee teravas masala kastmses</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>121. KALA AUSTRI KASTMES</h3>
+                <div class="menuLine"></div>
+                <p>€ 10.90</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>122. KALA MUSTA PIPRAGA</h3>
+                <img class="menuItemSpice" src="assets/files/svg/hot2.svg">
+                <div class="menuLine"></div>
+                <p>€ 10.90</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>123. TAIPÄRANE KALA</h3>
+                <img class="menuItemSpice spiceIcon2" src="assets/files/svg/hot2.svg">
+                <img class="menuItemSpice spiceIcon2" src="assets/files/svg/hot2.svg">
+                <div class="menuLine"></div>
+                <p>€ 10.90</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Tšilli, laimi ja basiiliku kastmes kalafilee</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>124. TAI KARRI KALAGA</h3>
+                <div class="menuLine"></div>
+                <p>€ 10.90</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Kalafilee kookospiima-karri kastmes</p>
+              </div>
+              <div class="menuItemHeader extraSpiceScale">
+                <h3>Punane karri</h3>
+                <img class="menuItemSpice spiceIcon3" src="assets/files/svg/hot3.svg">
+                <img class="menuItemSpice spiceIcon3" src="assets/files/svg/hot3.svg">
+                <img class="menuItemSpice spiceIcon3" src="assets/files/svg/hot3.svg">
+              </div>
+              <div class="menuItemHeader extraSpiceScale">
+                <h3>Roheline karri</h3>
+                <img class="menuItemSpice spiceIcon2" src="assets/files/svg/hot2.svg">
+                <img class="menuItemSpice spiceIcon2" src="assets/files/svg/hot2.svg">
+              </div>
+              <div class="menuItemHeader extraSpiceScale">
+                <h3>Kollane karri</h3>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>125. HIIDKREVETI MASALA</h3>
+                <div class="menuLine"></div>
+                <p>€ 12.90</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Hiidkrevetid teravas masala kastmes</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>126. HIIDKREVETID TŠILLI JA BASIILIKUGA</h3>
+                <img class="menuItemSpice" src="assets/files/svg/hot2.svg">
+                <div class="menuLine"></div>
+                <p>€ 12.90</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>127. HIIDKREVETID AUSTRI KASTMES</h3>
+                <div class="menuLine"></div>
+                <p>€ 12.90</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>128. HIIDKREVETID KÜÜSLAUGUGA</h3>
+                <div class="menuLine"></div>
+                <p>€ 12.90</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Hiidkrevetid juurviljadega küüslaugu kastmes</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>129. HIIDKREVETID MUSTA PIPRAGA</h3>
+                <img class="menuItemSpice" src="assets/files/svg/hot2.svg">
+                <div class="menuLine"></div>
+                <p>€ 12.90</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader current">
+                <h3>130. TAI KARRI HIIDKREVETTIDEGA</h3>
+                <div class="menuLine"></div>
+                <p>€ 12.90</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Hiidkrevetid kookospiima-karri kastmes</p>
+              </div>
+              <div class="menuItemHeader extraSpiceScale">
+                <h3>Punane karri</h3>
+                <img class="menuItemSpice spiceIcon3" src="assets/files/svg/hot3.svg">
+                <img class="menuItemSpice spiceIcon3" src="assets/files/svg/hot3.svg">
+                <img class="menuItemSpice spiceIcon3" src="assets/files/svg/hot3.svg">
+              </div>
+              <div class="menuItemHeader extraSpiceScale">
+                <h3>Roheline karri</h3>
+                <img class="menuItemSpice spiceIcon2" src="assets/files/svg/hot2.svg">
+                <img class="menuItemSpice spiceIcon2" src="assets/files/svg/hot2.svg">
+              </div>
+              <div class="menuItemHeader extraSpiceScale">
+                <h3>Kollane karri</h3>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>131. INDIA KREVETI KARRI</h3>
+                <img class="menuItemSpice" src="assets/files/svg/hot2.svg">
+                <div class="menuLine"></div>
+                <p>€ 10.90</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>132. TAI KREVETI KARRI ANANASSIGA</h3>
+                <img class="menuItemSpice" src="assets/files/svg/hot2.svg">
+                <div class="menuLine"></div>
+                <p>€ 10.90</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="page13" class="page13 page">
+      <div class="pg13-middle-wrap page-middle-wrap">
+        <div class="pg13-back page-pack"></div>
+        <div class="pg13-photo-wrap page-photo-wrap">
+          <div class="pg13-photo page-photo"></div>
+        </div>
+        <div class="pg13-white-desc page-white-desc">
+          <h2>TANDOORI LEIB</h2>
+          <div class="titleBottomBorder">
+            <hr class="hr1"><hr class="hr2"><hr class="hr3">
+          </div>
+          <div class="menuItemWrapper">
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>140. NAAN</h3>
+                <div class="menuLine"></div>
+                <p>€ 2.00</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>141. KÜÜSLAUGU NAAN</h3>
+                <div class="menuLine"></div>
+                <p>€ 2.20</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>142. JUUSTU NAAN</h3>
+                <div class="menuLine"></div>
+                <p>€ 2.50</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="page14" class="page14 page">
+      <div class="pg14-middle-wrap page-middle-wrap">
+        <div class="pg14-back page-pack"></div>
+        <div class="pg14-photo-wrap page-photo-wrap">
+          <div class="pg14-photo page-photo"></div>
+        </div>
+        <div class="pg14-white-desc page-white-desc">
+          <h2>RIIS & NUUDEL</h2>
+          <div class="titleBottomBorder">
+            <hr class="hr1"><hr class="hr2"><hr class="hr3">
+          </div>
+          <div class="menuItemWrapper">
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>150. AURUTATUD BASMATI RIIS</h3>
+                <div class="menuLine"></div>
+                <p>€ 2.00</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>151. NUUDLID KÖÖGIVILJADEGA</h3>
+                <div class="menuLine"></div>
+                <p>€ 5.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="page15" class="page15 page">
+      <div class="pg15-middle-wrap page-middle-wrap">
+        <div class="pg15-back page-pack"></div>
+        <div class="pg15-photo-wrap page-photo-wrap">
+          <div class="pg15-photo page-photo"></div>
+        </div>
+        <div class="pg15-white-desc page-white-desc">
+          <h2>NUUDLIROAD</h2>
+          <div class="titleBottomBorder">
+            <hr class="hr1"><hr class="hr2"><hr class="hr3">
+          </div>
+          <div class="menuItemWrapper">
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>160. PRAETUD RIIS MUNA JA JUURVILJADEGA</h3>
+                <div class="menuLine"></div>
+                <p>€ 6.00</p>
+              </div>
+              <div class="menuItemHeader extraMenuItems">
+                <h3>Kanaga ja/või</h3>
+              </div>
+              <div class="menuItemHeader extraMenuItems">
+                <h3>Krevettidega</h3>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>161. MUNANUUDLID JUURVILJADEGA</h3>
+                <div class="menuLine"></div>
+                <p>€ 6.00</p>
+              </div>
+              <div class="menuItemHeader extraMenuItems">
+                <h3>Kanaga ja/või</h3>
+              </div>
+              <div class="menuItemHeader extraMenuItems">
+                <h3>Krevettidega</h3>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader current">
+                <h3>162. SINGAPURI RIISINUUDLID</h3>
+                <div class="menuLine"></div>
+                <p>€ 6.00</p>
+              </div>
+              <div class="menuItemHeader extraMenuItems">
+                <h3>Kanaga ja/või</h3>
+              </div>
+              <div class="menuItemHeader extraMenuItems customAlignment">
+                <h3>Krevettidega</h3>
+                <img class="menuItemSpice" src="assets/files/svg/hot2.svg">
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>163. PHAD THAI KREVETTIDEGA</h3>
+                <img class="menuItemSpice" src="assets/files/svg/hot2.svg">
+                <div class="menuLine"></div>
+                <p>€ 6.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="page16" class="page16 page">
+      <img src="assets/files/svg/monkey.svg" class="monkey">
+      <div class="pg16-middle-wrap page-middle-wrap">
+        <div class="pg16-back page-pack"></div>
+        <div class="pg16-photo-wrap page-photo-wrap">
+          <div class="pg16-photo page-photo"></div>
+        </div>
+        <div class="pg16-white-desc page-white-desc">
+          <h2>LASTELE</h2>
+          <div class="titleBottomBorder">
+            <hr class="hr1"><hr class="hr2"><hr class="hr3">
+          </div>
+          <div class="menuItemWrapper">
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>170. MUNANUUDLID KANAGA</h3>
+                <div class="menuLine"></div>
+                <p>€ 4.00</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader current">
+                <h3>171. MAGUSHAPU KANA</h3>
+                <div class="menuLine"></div>
+                <p>€ 4.00</p>
+              </div>
+              <div class="menuItemTag">
+                <p class="menuItemDescription">Riisi ja värske salatiga</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="page17" class="page17 page">
+      <div class="pg17-middle-wrap page-middle-wrap">
+        <div class="pg17-back page-pack"></div>
+        <div class="pg17-photo-wrap page-photo-wrap">
+          <div class="pg17-photo page-photo"></div>
+        </div>
+        <div class="pg17-white-desc page-white-desc">
+          <h2>MAGUSTOIDUD</h2>
+          <div class="titleBottomBorder">
+            <hr class="hr1"><hr class="hr2"><hr class="hr3">
+          </div>
+          <div class="menuItemWrapper">
+            <div class="menuItem">
+              <div class="menuItemHeader current">
+                <h3>180. PRAETUD BANAAN JÄÄTISEGA</h3>
+                <div class="menuLine"></div>
+                <p>€ 4.00</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>181. MANGO KULFI</h3>
+                <div class="menuLine"></div>
+                <p>€ 4.00</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>182. MANGO CHIA</h3>
+                <div class="menuLine"></div>
+                <p>€ 4.00</p>
+              </div>
+            </div>
+            <div class="menuItem">
+              <div class="menuItemHeader">
+                <h3>183. VANILJE JÄÄTIS</h3>
+                <div class="menuLine"></div>
+                <p>€ 4.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- jQuery 2.1.3 -->
+  <script src="assets/script/jquery2.1.3.min.js"></script>
+  <!-- Main script for mobile nav ecs... -->
+  <script src="assets/script/script.js"></script>
+  <!-- Custom JavaScript for menu page animations -->
+  <script src="assets/script/menuPage.js"></script>
+</body>
+</html>

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="assets/style/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/style/index.css" />
+
+    <title>Home | Blossom</title>
+  </head>
+  <body class="fadeIn">
+    <!-- ### MOBILE NAVIGATION ### -->
+    <section id="mobileBurgerBtn" class="mobileNavWrapper">
+      <div id="burgerBtn" class="burgerBtn"></div>
+      <div class="mobileNav">
+        <ul class="mobileNavItems">
+          <li><a class="mobileNavItem" href="index.html">Home</a></li>
+          <li>
+            <a class="mobileNavItem menuLink current" href="menu.html">Menu</a>
+          </li>
+          <li><a class="mobileNavItem" href="#">Contact</a></li>
+          <li><a class="mobileNavItem" href="#">About</a></li>
+          <li class="mobileSVGIcons">
+            <button class="mobileSVGIcon">
+              <!-- Language icon -->
+              <svg
+                class="flagIcon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 52 51.71"
+              >
+                <path
+                  class="path1"
+                  d="M18.83,32.27v1.3H8.88V18.75h9.76v1.3h-8.3v5.34h7.24v1.23H10.34v5.65Z"
+                />
+                <path
+                  class="path1"
+                  d="M30.33,33.57H28.91v-6a5.33,5.33,0,0,0-.56-2.78,2,2,0,0,0-1.78-.88,3.64,3.64,0,0,0-1.64.4,4.49,4.49,0,0,0-1.43,1.1A4.2,4.2,0,0,0,22.61,27v6.62H21.19V22.74h1.29v2.47a4.93,4.93,0,0,1,1.15-1.38,5.47,5.47,0,0,1,1.61-.93,5.36,5.36,0,0,1,1.86-.33,3.25,3.25,0,0,1,1.52.33,2.61,2.61,0,0,1,1,1,4.41,4.41,0,0,1,.54,1.47,10.23,10.23,0,0,1,.17,1.92Z"
+                />
+                <path
+                  class="path1"
+                  d="M37.72,33.78a4.7,4.7,0,0,1-2-.46,5.3,5.3,0,0,1-1.62-1.24,5.94,5.94,0,0,1-1-1.79,5.83,5.83,0,0,1-.38-2.06A6.36,6.36,0,0,1,33,26.07a5.7,5.7,0,0,1,1-1.81A5,5,0,0,1,35.63,23a4.56,4.56,0,0,1,2-.45,4.22,4.22,0,0,1,2.44.7A6.85,6.85,0,0,1,41.85,25V22.74h1.27V33.62a4.31,4.31,0,0,1-.72,2.53,4.45,4.45,0,0,1-1.94,1.55,6.64,6.64,0,0,1-2.66.52,5.85,5.85,0,0,1-3-.67,5.37,5.37,0,0,1-1.88-1.79l.87-.69a4,4,0,0,0,1.72,1.52,5.28,5.28,0,0,0,2.29.5,5,5,0,0,0,2-.37,3.4,3.4,0,0,0,1.42-1.14,3.29,3.29,0,0,0,.53-1.91V31.52A4.72,4.72,0,0,1,40,33.16,4.54,4.54,0,0,1,37.72,33.78Zm.39-1.19a3.45,3.45,0,0,0,1.24-.23,4.4,4.4,0,0,0,1.1-.62,4,4,0,0,0,.83-.86,2.26,2.26,0,0,0,.42-1V26.54a4.45,4.45,0,0,0-2.22-2.37A3.6,3.6,0,0,0,38,23.82a3.37,3.37,0,0,0-1.64.39,3.74,3.74,0,0,0-1.21,1,5.17,5.17,0,0,0-1,3,4.46,4.46,0,0,0,.32,1.66,4.63,4.63,0,0,0,.86,1.39,3.8,3.8,0,0,0,1.3.95A3.67,3.67,0,0,0,38.11,32.59Z"
+                />
+                <ellipse class="path2" cx="26" cy="25.85" rx="25" ry="24.85" />
+              </svg>
+            </button>
+            <!-- Audio files -->
+            <audio id="musicMobile" class="mobileSVGIcon" preload="auto" loop>
+              <source
+                src="assets/files/music/IndianDreams.mp3"
+                type="audio/mp3"
+              />
+              <source
+                src="assets/files/music/IndianDreams.wav"
+                type="audio/wav"
+              />
+            </audio>
+            <!-- Play audio -->
+            <button id="musicIconsMobile" class="mobileSVGIcon musicPlayMobile">
+              <!-- Music play icon -->
+              <svg
+                class="playIcon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 52 51.71"
+              >
+                <path
+                  class="path1"
+                  d="M37.67,25.22,21.16,12.6a.85.85,0,0,0-.88-.09.86.86,0,0,0-.46.76V38.44a.84.84,0,0,0,.46.75,1.17,1.17,0,0,0,.45.09.63.63,0,0,0,.43-.17L37.67,26.55a.81.81,0,0,0,.33-.66A.84.84,0,0,0,37.67,25.22ZM21.56,36.75V15L35.78,25.89Z"
+                />
+                <ellipse class="path2" cx="26" cy="25.85" rx="25" ry="24.85" />
+              </svg>
+              <!-- Music pause icon -->
+              <svg
+                class="pauseIcon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 52 51.71"
+              >
+                <path
+                  class="path1"
+                  d="M19,11.92a.94.94,0,0,0-.94.94v26a.94.94,0,0,0,1.88,0v-26A.94.94,0,0,0,19,11.92Zm14.06,0a.94.94,0,0,0-.94.94v26a.94.94,0,0,0,1.88,0v-26A.94.94,0,0,0,33,11.92Z"
+                />
+                <ellipse class="path2" cx="26" cy="25.85" rx="25" ry="24.85" />
+              </svg>
+            </button>
+            <!-- Facebook icon -->
+            <button class="mobileSVGIcon">
+              <a href="#" target="blank">
+                <svg
+                  class="facebookIcon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 52 51.71"
+                >
+                  <path
+                    class="path1"
+                    d="M34.23,24.8H24.72V19.52c0-3.21.75-5.48,2.21-6.76a4.59,4.59,0,0,1,3.4-1.12h3.9a.78.78,0,0,0,0-1.55H30.49a6.26,6.26,0,0,0-4.56,1.47c-1.83,1.58-2.75,4.26-2.75,8V24.8H17.77a.78.78,0,0,0,0,1.55h5.41v14.5a.77.77,0,1,0,1.54,0V26.35h9.51a.78.78,0,0,0,0-1.55Z"
+                  />
+                  <ellipse
+                    class="path2"
+                    cx="26"
+                    cy="25.85"
+                    rx="25"
+                    ry="24.85"
+                  />
+                </svg>
+              </a>
+            </button>
+            <button class="mobileSVGIcon">
+              <!-- Wolt icon -->
+              <a href="#" target="blank">
+                <svg
+                  class="woltIcon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 52 51.7"
+                >
+                  <path
+                    class="path1"
+                    d="M37.54,13.34c-.78,0-1.49,0-1.83.07-.69.07-.92.73-.87,1.37C35.57,24.1,33.51,35,31.19,35,29.45,35,29,29.89,29,25.38c0-2.66.16-5.24.21-7.49,0-.84-.28-1-.89-1.07a6.79,6.79,0,0,0-2.5.09c-.69.16-.87.73-1.6,2.47C20.53,28.08,17,35.07,17,35.07c-.94-7,.27-13.81,1.28-18.76.14-.68-.18-1.09-.75-1.09a7.92,7.92,0,0,0-3.41.54A2.43,2.43,0,0,0,13,17.67c-1.14,5.69-1.87,12.81-.73,18.33.25,1.19.51,1.47,1,1.77a11.32,11.32,0,0,0,3.5.59,2.61,2.61,0,0,0,2.53-1.49A115,115,0,0,0,24.4,26.55c.23,6.59,1.18,11.76,5.81,11.76,6.14,0,10.1-15.33,10.1-22.71C40.31,13.66,39.34,13.34,37.54,13.34Z"
+                  />
+                  <ellipse
+                    class="path2"
+                    cx="26"
+                    cy="25.85"
+                    rx="25"
+                    ry="24.85"
+                  />
+                </svg>
+              </a>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!--  ### DESKTOP NAVIGATION ### -->
+    <section class="navWrapper">
+      <ul>
+        <li class="topLeft">
+          <button>
+            <!-- Logo icon -->
+            <a href="index.html" class="tooltip">
+              <span class="tooltiptext">Home</span>
+              <svg
+                class="logoIcon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 370 370"
+              >
+                <path
+                  class="path1"
+                  d="M185,351.5A166.59,166.59,0,0,1,26.91,132.65C28.7,146.82,48.55,276.46,174.4,256.33c0,0-77,2.4-97.24-81,0,0-43.62,4.3-50.23-42.69a166.55,166.55,0,0,1,316.14,0c-6.61,47-50.23,42.69-50.23,42.69-20.23,83.45-97.24,81-97.24,81,125.84,20.13,145.7-109.51,147.49-123.68A166.59,166.59,0,0,1,185,351.5ZM185,0C82.83,0,0,82.83,0,185S82.83,370,185,370s185-82.83,185-185S287.17,0,185,0Z"
+                />
+                <path
+                  class="path1"
+                  d="M288.59,124.66c-13.49,42.23-57.14,39-57.14,39C243.16,245.32,185,250.29,185,250.29c117.52.71,103.59-125.63,103.59-125.63Z"
+                />
+                <path
+                  class="path1"
+                  d="M138.55,163.7s-43.65,3.19-57.14-39c0,0-13.93,126.34,103.59,125.63,0,0-58.16-5-46.45-86.59Z"
+                />
+                <path
+                  class="path1"
+                  d="M313.43,236.81c-1.78,28.45-39.75,39.39-80.56,29.45S185,263.07,185,263.07v29.55c.13-2,3.35-14.39,64.21-7.19,66,7.81,64.22-48.62,64.22-48.62Z"
+                />
+                <path
+                  class="path1"
+                  d="M185,292.88v-.26a1.71,1.71,0,0,0,0,.26Z"
+                />
+                <path
+                  class="path1"
+                  d="M185,292.88a1.71,1.71,0,0,0,0-.26v.26Z"
+                />
+                <path
+                  class="path1"
+                  d="M137.12,266.26c-40.81,9.94-78.78-1-80.56-29.45,0,0-1.82,56.43,64.22,48.62,60.86-7.2,64.08,5.2,64.21,7.19V263.07s-7.05-6.74-47.87,3.19Z"
+                />
+                <path
+                  class="path1"
+                  d="M185,247.14s85.57-57,0-143.73c-85.57,86.77,0,143.73,0,143.73Z"
+                />
+              </svg>
+            </a>
+          </button>
+          <button>
+            <a href="#" class="tooltip">
+              <span class="tooltiptext">Maybe someday 😉</span>
+              <!-- Language icon -->
+              <svg
+                class="flagIcon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 52 51.71"
+              >
+                <path
+                  class="path1"
+                  d="M18.83,32.27v1.3H8.88V18.75h9.76v1.3h-8.3v5.34h7.24v1.23H10.34v5.65Z"
+                />
+                <path
+                  class="path1"
+                  d="M30.33,33.57H28.91v-6a5.33,5.33,0,0,0-.56-2.78,2,2,0,0,0-1.78-.88,3.64,3.64,0,0,0-1.64.4,4.49,4.49,0,0,0-1.43,1.1A4.2,4.2,0,0,0,22.61,27v6.62H21.19V22.74h1.29v2.47a4.93,4.93,0,0,1,1.15-1.38,5.47,5.47,0,0,1,1.61-.93,5.36,5.36,0,0,1,1.86-.33,3.25,3.25,0,0,1,1.52.33,2.61,2.61,0,0,1,1,1,4.41,4.41,0,0,1,.54,1.47,10.23,10.23,0,0,1,.17,1.92Z"
+                />
+                <path
+                  class="path1"
+                  d="M37.72,33.78a4.7,4.7,0,0,1-2-.46,5.3,5.3,0,0,1-1.62-1.24,5.94,5.94,0,0,1-1-1.79,5.83,5.83,0,0,1-.38-2.06A6.36,6.36,0,0,1,33,26.07a5.7,5.7,0,0,1,1-1.81A5,5,0,0,1,35.63,23a4.56,4.56,0,0,1,2-.45,4.22,4.22,0,0,1,2.44.7A6.85,6.85,0,0,1,41.85,25V22.74h1.27V33.62a4.31,4.31,0,0,1-.72,2.53,4.45,4.45,0,0,1-1.94,1.55,6.64,6.64,0,0,1-2.66.52,5.85,5.85,0,0,1-3-.67,5.37,5.37,0,0,1-1.88-1.79l.87-.69a4,4,0,0,0,1.72,1.52,5.28,5.28,0,0,0,2.29.5,5,5,0,0,0,2-.37,3.4,3.4,0,0,0,1.42-1.14,3.29,3.29,0,0,0,.53-1.91V31.52A4.72,4.72,0,0,1,40,33.16,4.54,4.54,0,0,1,37.72,33.78Zm.39-1.19a3.45,3.45,0,0,0,1.24-.23,4.4,4.4,0,0,0,1.1-.62,4,4,0,0,0,.83-.86,2.26,2.26,0,0,0,.42-1V26.54a4.45,4.45,0,0,0-2.22-2.37A3.6,3.6,0,0,0,38,23.82a3.37,3.37,0,0,0-1.64.39,3.74,3.74,0,0,0-1.21,1,5.17,5.17,0,0,0-1,3,4.46,4.46,0,0,0,.32,1.66,4.63,4.63,0,0,0,.86,1.39,3.8,3.8,0,0,0,1.3.95A3.67,3.67,0,0,0,38.11,32.59Z"
+                />
+                <ellipse class="path2" cx="26" cy="25.85" rx="25" ry="24.85" />
+              </svg>
+            </a>
+          </button>
+          <audio id="music" preload="auto" loop>
+            <source
+              src="assets/files/music/IndianDreams.mp3"
+              type="audio/mp3"
+            />
+            <source
+              src="assets/files/music/IndianDreams.wav"
+              type="audio/wav"
+            />
+          </audio>
+          <button id="musicIcons" class="tooltip musicPlay">
+            <span class="tooltiptext">Music</span>
+            <!-- Music play icon -->
+            <svg
+              class="playIcon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 52 51.71"
+            >
+              <path
+                class="path1"
+                d="M37.67,25.22,21.16,12.6a.85.85,0,0,0-.88-.09.86.86,0,0,0-.46.76V38.44a.84.84,0,0,0,.46.75,1.17,1.17,0,0,0,.45.09.63.63,0,0,0,.43-.17L37.67,26.55a.81.81,0,0,0,.33-.66A.84.84,0,0,0,37.67,25.22ZM21.56,36.75V15L35.78,25.89Z"
+              />
+              <ellipse class="path2" cx="26" cy="25.85" rx="25" ry="24.85" />
+            </svg>
+            <!-- Music pause icon -->
+            <svg
+              class="pauseIcon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 52 51.71"
+            >
+              <path
+                class="path1"
+                d="M19,11.92a.94.94,0,0,0-.94.94v26a.94.94,0,0,0,1.88,0v-26A.94.94,0,0,0,19,11.92Zm14.06,0a.94.94,0,0,0-.94.94v26a.94.94,0,0,0,1.88,0v-26A.94.94,0,0,0,33,11.92Z"
+              />
+              <ellipse class="path2" cx="26" cy="25.85" rx="25" ry="24.85" />
+            </svg>
+          </button>
+          <!-- Facebook icon -->
+          <button>
+            <a href="#" target="blank" class="tooltip">
+              <span class="tooltiptext">Facebook</span>
+              <svg
+                class="facebookIcon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 52 51.71"
+              >
+                <path
+                  class="path1"
+                  d="M34.23,24.8H24.72V19.52c0-3.21.75-5.48,2.21-6.76a4.59,4.59,0,0,1,3.4-1.12h3.9a.78.78,0,0,0,0-1.55H30.49a6.26,6.26,0,0,0-4.56,1.47c-1.83,1.58-2.75,4.26-2.75,8V24.8H17.77a.78.78,0,0,0,0,1.55h5.41v14.5a.77.77,0,1,0,1.54,0V26.35h9.51a.78.78,0,0,0,0-1.55Z"
+                />
+                <ellipse class="path2" cx="26" cy="25.85" rx="25" ry="24.85" />
+              </svg>
+            </a>
+          </button>
+          <button>
+            <!-- Wolt icon -->
+            <a href="#" target="blank" class="tooltip">
+              <span class="tooltiptext">Wolt</span>
+              <svg
+                class="woltIcon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 52 51.7"
+              >
+                <path
+                  class="path1"
+                  d="M37.54,13.34c-.78,0-1.49,0-1.83.07-.69.07-.92.73-.87,1.37C35.57,24.1,33.51,35,31.19,35,29.45,35,29,29.89,29,25.38c0-2.66.16-5.24.21-7.49,0-.84-.28-1-.89-1.07a6.79,6.79,0,0,0-2.5.09c-.69.16-.87.73-1.6,2.47C20.53,28.08,17,35.07,17,35.07c-.94-7,.27-13.81,1.28-18.76.14-.68-.18-1.09-.75-1.09a7.92,7.92,0,0,0-3.41.54A2.43,2.43,0,0,0,13,17.67c-1.14,5.69-1.87,12.81-.73,18.33.25,1.19.51,1.47,1,1.77a11.32,11.32,0,0,0,3.5.59,2.61,2.61,0,0,0,2.53-1.49A115,115,0,0,0,24.4,26.55c.23,6.59,1.18,11.76,5.81,11.76,6.14,0,10.1-15.33,10.1-22.71C40.31,13.66,39.34,13.34,37.54,13.34Z"
+                />
+                <ellipse class="path2" cx="26" cy="25.85" rx="25" ry="24.85" />
+              </svg>
+            </a>
+          </button>
+        </li>
+        <li class="topRight current"><a href="menu.html">Menu</a></li>
+        <li class="btmLeft"><a href="#">Contact</a></li>
+        <li class="btmRight"><a href="#">About</a></li>
+      </ul>
+    </section>
+
+    <section class="container">
+      <div class="frame">
+        <div class="flower">
+          <div class="leaf leaf-0"></div>
+          <div class="leaf leaf-1"></div>
+          <div class="leaf leaf-2"></div>
+          <div class="leaf leaf-3"></div>
+          <div class="leaf leaf-4"></div>
+          <div class="leaf leaf-5"></div>
+          <div class="leaf leaf-6"></div>
+          <div class="leaf leaf-7"></div>
+          <div class="leaf leaf-8"></div>
+          <div class="leaf leaf-9"></div>
+          <div class="leaf leaf-10"></div>
+          <div class="leaf leaf-11"></div>
+          <div class="leaf leaf-12"></div>
+          <div class="leaf leaf-13"></div>
+          <div class="leaf leaf-14"></div>
+          <div class="leaf leaf-15"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+    </section>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/randomcolor/0.5.2/randomColor.min.js"></script> -->
+
+    <script src="assets/script/script.js"></script>
+  </body>
+</html>
