@@ -345,7 +345,6 @@ body {
 /* ### PAGE 1 ### */
 .page1 {
   position: relative;
-  width: 1000px;
   height: 600px;
   margin: 110px 10px 10px 10px;
   background-color: #bf2a2a;
