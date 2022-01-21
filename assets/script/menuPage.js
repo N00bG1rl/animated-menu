@@ -7,9 +7,11 @@ $(document).ready(function () {
 
 /* Menu scroll animations */
 $(window).scroll(function () {
+  //console.log('Scroll')
   /* Get scroll position */
   const scrollPosition = $(this).scrollTop()
   const halfWindowheight = $(window).height() / 2
+
   const page1Top = 0
   const page2Top = $('.page2').offset().top - halfWindowheight
   const page3Top = $('.page3').offset().top - halfWindowheight
@@ -41,16 +43,16 @@ $(window).scroll(function () {
 
   /* Add active class to active page elements */
   if (scrollPosition > page1Top && scrollPosition < page2Top) {
-    $('.page1-title').addClass('page1-title-active')
-    $('.page1-desc').addClass('page1-desc-active')
-    $('.chilliWrapper').addClass('chilliWrapper-active')
+    //$('.page1-title').addClass('page1-title-active')
+    //$('.chilliWrapper').addClass('chilliWrapper-active')
+    //$('.page1-desc').addClass('page1-desc-active')
     $('.foodLink').addClass('foodLink-active')
     $('.scrollToTopBtn').removeClass('scrollToTopBtn-active')
   } else if (scrollPosition > page2Top && scrollPosition < page3Top) {
-    $('.pg2-back').addClass('page-back-active')
-    $('.pg2-photo-wrap').addClass('photo-wrap-active')
+    //$('.pg2-back').addClass('page-back-active')
+    //$('.pg2-photo-wrap').addClass('photo-wrap-active')
     $('.pg2-photo').addClass('page-photo-active')
-    $('.pg2-white-desc').addClass('white-desc-active')
+    //$('.pg2-white-desc').addClass('white-desc-active')
     $('.scrollToTopBtn').addClass('scrollToTopBtn-active')
   } else if (scrollPosition > page3Top && scrollPosition < page4Top) {
     $('.pg3-back').addClass('page-back-active')
