@@ -43,6 +43,7 @@ const throttle = (callback, time) => {
 const callback = entries => {
   entries.forEach(page => {
     const target = page.target
+    //console.log(target.classList)
 
     const pagePack = target.querySelector('.page-pack')
     const photoWrap = target.querySelector('.page-photo-wrap')
@@ -50,12 +51,18 @@ const callback = entries => {
     const whiteDesc = target.querySelector('.page-white-desc')
     const monkey = document.querySelector('.monkey')
 
+    if (
+      target.classList.contains('page16') ||
+      target.classList.contains('page17')
+    ) {
+      monkey.classList.add('monkey-active')
+    }
+
     const addPageAnim = () => {
       pagePack.classList.add('page-back-active')
       photoWrap.classList.add('photo-wrap-active')
       pagePhoto.classList.add('page-photo-active')
       whiteDesc.classList.add('white-desc-active')
-      monkey.classList.add('monkey-active')
     }
     const removePageAnim = () => {
       pagePack.classList.remove('page-back-active')
