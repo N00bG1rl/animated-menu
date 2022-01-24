@@ -1,49 +1,51 @@
 const invokeCallback = 0.4
-const page1 = document.querySelector('.page1')
-const page1Height = page1.offsetHeight
+const invokeHeaderCallback = 1.0
+
+// Animations for header/first page
 const chilliSkate = document.querySelector('.chilliWrapper')
 const headerPageTitle = document.querySelector('.page1-title')
 const headerPageBack = document.querySelector('.page1-desc')
 const scrollToTop = document.querySelector('.scrollToTopBtn')
 
-const removePage1Anim = () => {
-  chilliSkate.classList.remove('chilliWrapper-active')
-  headerPageTitle.classList.remove('page1-title-active')
-  headerPageBack.classList.remove('page1-desc-active')
-  scrollToTop.classList.add('scrollToTopBtn-active')
-}
-const addPage1Anim = () => {
-  chilliSkate.classList.add('chilliWrapper-active')
-  headerPageTitle.classList.add('page1-title-active')
-  headerPageBack.classList.add('page1-desc-active')
-  scrollToTop.classList.remove('scrollToTopBtn-active')
-}
-
-let throttleTimer
-window.addEventListener('scroll', () => {
-  throttle(() => {
-    if (window.scrollY >= page1Height || window.scrollY === 0) {
-      removePage1Anim()
-    } else {
-      addPage1Anim()
+const callbackForHeader = entries => {
+  entries.forEach(elem => {
+    const removePage1Anim = () => {
+      chilliSkate.classList.remove('chilliWrapper-active')
+      headerPageTitle.classList.remove('page1-title-active')
+      headerPageBack.classList.remove('page1-desc-active')
+      scrollToTop.classList.add('scrollToTopBtn-active')
     }
-  }, 250)
-})
 
-const throttle = (callback, time) => {
-  if (throttleTimer) return
-  throttleTimer = true
+    const addPage1Anim = () => {
+      chilliSkate.classList.add('chilliWrapper-active')
+      headerPageTitle.classList.add('page1-title-active')
+      headerPageBack.classList.add('page1-desc-active')
+      scrollToTop.classList.remove('scrollToTopBtn-active')
+    }
 
-  setTimeout(() => {
-    callback()
-    throttleTimer = false
-  }, time)
+    elem.intersectionRatio >= invokeHeaderCallback
+      ? addPage1Anim()
+      : removePage1Anim()
+  })
 }
 
-const callback = entries => {
+const optionsForHeader = {
+  rootMargin: '0px',
+  threshold: invokeHeaderCallback,
+}
+
+const observerForHeader = new IntersectionObserver(
+  callbackForHeader,
+  optionsForHeader
+)
+
+const headerTarget = document.querySelector('.page1')
+observerForHeader.observe(headerTarget)
+
+// Animations for all other pages
+const callbackForPages = entries => {
   entries.forEach(page => {
     const target = page.target
-    //console.log(target.classList)
 
     const pagePack = target.querySelector('.page-pack')
     const photoWrap = target.querySelector('.page-photo-wrap')
@@ -76,11 +78,10 @@ const callback = entries => {
   })
 }
 
-const options = {
+const pagesOptions = {
   rootMargin: '0px',
   threshold: invokeCallback,
 }
 
-const observer = new IntersectionObserver(callback, options)
-
-document.querySelectorAll('.page').forEach(page => observer.observe(page))
+const pagesObserver = new IntersectionObserver(callbackForPages, pagesOptions)
+document.querySelectorAll('.page').forEach(page => pagesObserver.observe(page))
