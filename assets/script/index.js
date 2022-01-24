@@ -1,13 +1,10 @@
-const invokeCallback = 0.4
-const invokeHeaderCallback = 1.0
-
 // Animations for header/first page
-const chilliSkate = document.querySelector('.chilliWrapper')
-const headerPageTitle = document.querySelector('.page1-title')
-const headerPageBack = document.querySelector('.page1-desc')
-const scrollToTop = document.querySelector('.scrollToTopBtn')
-
 const callbackForHeader = entries => {
+  const chilliSkate = document.querySelector('.chilliWrapper')
+  const headerPageTitle = document.querySelector('.page1-title')
+  const headerPageBack = document.querySelector('.page1-desc')
+  const scrollToTop = document.querySelector('.scrollToTopBtn')
+
   entries.forEach(elem => {
     const removePage1Anim = () => {
       chilliSkate.classList.remove('chilliWrapper-active')
@@ -29,6 +26,7 @@ const callbackForHeader = entries => {
   })
 }
 
+const invokeHeaderCallback = 1.0
 const optionsForHeader = {
   rootMargin: '0px',
   threshold: invokeHeaderCallback,
@@ -78,6 +76,7 @@ const callbackForPages = entries => {
   })
 }
 
+const invokeCallback = 0.4
 const pagesOptions = {
   rootMargin: '0px',
   threshold: invokeCallback,
